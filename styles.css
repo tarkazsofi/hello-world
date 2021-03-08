@@ -6,6 +6,116 @@ body {
   box-sizing: border-box;
   margin: 0;
 }
+.pride-pattern {
+  display: grid;
+  grid-template-columns: repeat(7, 3fr 4fr 5fr);
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  height: 8px;
+  grid-template-areas: "a b c d e f g h i j k l m n o p q r s t u";
+}
+
+.a {
+  grid-area: a;
+}
+
+.b {
+  grid-area: b;
+}
+
+.c {
+  grid-area: c;
+}
+
+.d {
+  grid-area: d;
+}
+
+.e {
+  grid-area: e;
+}
+
+.f {
+  grid-area: f;
+}
+
+.g {
+  grid-area: g;
+}
+
+.h {
+  grid-area: h;
+}
+
+.i {
+  grid-area: i;
+}
+
+.j {
+  grid-area: j;
+}
+
+.k {
+  grid-area: k;
+}
+
+.l {
+  grid-area: l;
+}
+
+.m {
+  grid-area: m;
+}
+
+.n {
+  grid-area: n;
+}
+
+.o {
+  grid-area: o;
+}
+
+.p {
+  grid-area: p;
+}
+
+.q {
+  grid-area: q;
+}
+
+.r {
+  grid-area: r;
+}
+
+.s {
+  grid-area: s;
+}
+
+.t {
+  grid-area: t;
+}
+
+.u {
+  grid-area: u;
+}
+.pride-pattern div:nth-child(6n) {
+  background-color: #ff0018;
+}
+.pride-pattern div:nth-child(6n + 1) {
+  background-color: #ffa52c;
+}
+.pride-pattern div:nth-child(6n + 2) {
+  background-color: #ffff41;
+}
+.pride-pattern div:nth-child(6n + 3) {
+  background-color: #008018;
+}
+.pride-pattern div:nth-child(6n + 4) {
+  background-color: #0000f9;
+}
+.pride-pattern div:nth-child(6n + 5) {
+  background-color: #86007d;
+}
 header {
   margin-bottom: 16px;
   border-bottom: 1px solid black;
