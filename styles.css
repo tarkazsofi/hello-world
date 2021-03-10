@@ -2,6 +2,15 @@ html,
 body {
   height: 100%;
 }
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 48px 1fr 48px;
+  grid-template-areas:
+    "Header"
+    "Main"
+    "Footer";
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -117,9 +126,9 @@ body {
   background-color: #86007d;
 }
 header {
-  margin-bottom: 16px;
   border-bottom: 1px solid black;
   box-shadow: 0 5px 4px 0 black;
+  grid-area: Header;
 }
 header ul {
   display: flex;
@@ -142,13 +151,18 @@ h1 {
 p {
   margin-bottom: 12px;
 }
+main {
+  grid-area: Main;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 main ul {
   margin-bottom: 12px;
 }
 footer {
-  margin-top: 16px;
   border-top: 1px solid black;
   box-shadow: 0 -5px 4px 0 black;
   padding-top: 8px;
   padding-bottom: 8px;
+  grid-area: Footer;
 }
